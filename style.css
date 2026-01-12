@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #000000;
+    color: #fff3f3;
+}
+
+header {
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: #555;
+    border-bottom: 2px solid #555;
+}
+
+.section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.logo-img {
+    width: 80px;
+    height: auto;
+}
+
+.text {
+    max-width: 500px;
+    font-size: 18px;
+    line-height: 1.5;
+    border-bottom: 2px;
+}
+
+.btn {
+    display: inline-block;
+    background: rgb(0, 255, 234);
+    color: rgb(255, 253, 253);
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: rgb(3, 183, 207);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+.project-item img {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #000000;
+}
+
+.project-item p {
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto;
+    gap: 10px;
+}
+
+form input {
+    padding: 10px;
+    border: none;
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+.qr {
+    width: 180px;
+    margin-top: 20px;
+}
+
+footer {
+    background: #3d3d3d;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.hover-effect {
+width: 300px;
+border-radius: 12px;
+transition: transform 0.4s ease, box-shadow 0.4s ease;
+cursor: pointer;
+}
+
+.hover-effect:hover{
+    transform: scale(1.05); 
+    box-shadow: 0 0 20px #b3ff00; 
+}
+
+.shine-desc{
+margin-top: 20px;
+font-size: 20px;
+line-height: 1.6;
+color: #7FFFD4;
+text-shadow: 0 0 5px #00F5FF;
+    
+}
+/*animasi gradiasi bergerak */
+@keyframes shine {
+    0%{
+        background-position: 200%;
+    }
+
+    100%{
+        background-position: 400%;
+    }
+}
+ .btn-kirim{
+    background-color: #00dee6;
+    color: #000;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 300;
+ }
+
+ .btn-kirim:hover{
+    background-color: #19d400;
+    box-shadow: 0 0 10px #1eff00;
+ }
+
+ @media(max-width: 768px){
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #00F5FF;
+        box-shadow: #000;
+        padding: 12px;
+        border-radius: 10px;
+    }
+
+    .nav-links.active{
+        display: flex;
+    }
+
+    .nav-links li{
+        margin: 10px 0;
+    }
+ }
+
+ .nav-links{
+ display: flex;
+ gap: 10px;
+ list-style: none;
+ transition: all 0.4s ease;
+ }
+
+ @media(max-width: 768px) {
+    .nav-links{
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #00dee6;
+        box-shadow: #000;
+        border-radius: 10px;
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        transition: all 0.4s ease;
+    }
+
+    .nav-links.active {
+        max-height: 300px;
+        opacity: 1;
+    }
+
+    .menu-toggle{
+        display: block;
+    }
+
+    .nav-links li{
+        margin: 10px 0;
+    }
+ }

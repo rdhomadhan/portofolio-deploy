@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ridho Ramadhan - Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <h1 class="logo" id="nav-links">Ridho Ramadhan</h1>
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#project">project</a></li>
+                <li><a href="#contact">contact</a></li>
+                <li><a href="#sosmed">sosmed</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section id="home" class="section">
+        <div class="intro">
+            <img src="smkn 4.jpg" alt="Logo Sekolah" class="logo-img">
+            <div class="text">
+                <p class="shine-desc">saya Ridho Ramadhan
+                berikut adalah beberapa proyek saya selama belajar dan mengembangkan kemampuan dalam dunia web</p>
+                <a href="#project" class="btn">project</a>
+            </div>
+            <img src="rpl.jpg" alt="Logo RPL" class="logo-img">
+        </div>
+    </section>
+    <footer></footer>
+
+    <!-- About -->
+    <section class="intro" class="section">
+       <p class="shine-desc"><b>nama saya Ridho Ramadhan,saya adalah murid dari SMKN 4 PALEMBANG
+             dan jurusan saya RPL,saya tertarik pada dunia rekayasa perangkat lunak
+             karena ingin memahami secara membuat aplikasi dan website yang
+             bermanfaat.saya senang belajar tentang Pemrograman,desain antar muka,
+             dan pengembangan sistem.harapan saya keahlian di bidang rpl dapat membantu saya 
+             menjadi programer profesional  di masa depan
+       </b></p>
+         
+        
+   </section>
+    <footer></footer>
+
+    <!-- Project -->
+    <section id="project" class="section">
+        <h1 class="shine-desc">adalah project saya selama belajar</h1>
+        <div class="project-grid">
+            <div class="project-item">
+                <img src="Screenshot (4).png" alt="Project Ulang Tahun" class="hover-effect">
+                <p class="shine-desc"><b>website ulang tahun</b></p>
+            </div>
+            <div class="project-item">
+                <img src="Screenshot (5).png" alt="Website Rumah Makan" class="hover-effect">
+                <p class="shine-desc"><b>website rumah makan</b></p>
+            </div>
+            <div class="project-item">
+                <img src="Screenshot (6).png" alt="Login Page Facebook" class="hover-effect">
+                <p class="shine-desc"><b>website Informasi Bahasa Pemrograman</b></p>
+            </div>
+            <div class="project-item">
+                <img src="Screenshot (7).png" alt="Bahasa Pemrograman" class="hover-effect">
+                <p class="shine-desc"><b>tampilan login facebok clone versi saya</b></p>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+    
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <h2>Kontak Saya</h2>
+        <form>
+            <label>Username</label>
+            <input type="text" placeholder="Masukkan username" class="hover-effect">
+            <label>Email</label>
+            <input type="email" placeholder="Masukkan email" class="hover-effect">
+            <label>Nomor HP</label>
+            <input type="text" placeholder="Masukkan nomor HP" class="hover-effect">
+            <button type="submit" class="btn-kirim">Kirim</button>
+        </form>
+    </section>
+    <footer></footer>
+
+    <!-- Sosmed -->
+    <section id="sosmed" class="section">
+        <h2>WhatsApp saya</h2>
+        <img src="qr.jpg"QR WhatsApp class="qr">
+    </section>
+
+    <footer>
+        <p>© 2025 Ridho Ramadhan | Dibuat dengan ❤️</p>
+    </footer>
+
+    <script>
+        const toggle =document.getElementById('menu-toggle');
+        const navlinks=document.getElementById('nav-links');
+
+    toggle.addEventListener('click' , () => {
+        navlinks.classList.toggle('active');
+    });
+    </script>
+
+</body>
+</html>
